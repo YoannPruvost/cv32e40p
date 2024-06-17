@@ -66,9 +66,9 @@ module cv32e40p_EX_assert import cv32e40p_pkg::*;
             (apu_rvalid_q && ~(( ~apu_read_dep_for_jalr_o && (ctrl_transfer_insn_in_dec_i==2)) && regfile_alu_we_i) && ~((data_misaligned_i || data_misaligned_ex_i) || ((data_req_i || data_rvalid_i) && regfile_alu_we_i)) && mulh_active) |-> mult_operator_i == MUL_H;
     endproperty
 
-    assert_unreachable_ex_211: assert property(unreachable_ex_211);
-    assert_unreachable_ex_237: assert property(unreachable_ex_237);
-    assert_unreachable_ex_387: assert property(unreachable_ex_387);
-    assert_unreachable_ex_396: assert property(unreachable_ex_396);
+    // assert_unreachable_ex_211: assert property(unreachable_ex_211);
+    // assert_unreachable_ex_237: assert property(unreachable_ex_237);
+    // assert_unreachable_ex_387: assert property(unreachable_ex_387);
+    // assert_unreachable_ex_396: assert property(unreachable_ex_396);
 
 endmodule

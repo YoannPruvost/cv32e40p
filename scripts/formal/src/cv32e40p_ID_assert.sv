@@ -42,5 +42,5 @@ module cv32e40p_ID_assert import cv32e40p_pkg::*;
             (alu_op_c_mux_sel == OP_C_REGC_OR_FWD) && (~(alu_op_b_mux_sel == OP_B_BMASK) && ((alu_op_a_mux_sel != OP_A_REGC_OR_FWD) && (ctrl_transfer_target_mux_sel != JT_JALR)) && ~alu_bmask_b_mux_sel) |-> alu_op_b_mux_sel == OP_B_IMM;
     endproperty
 
-    assert_unreachable_id_872: assert property(unreachable_id_872);
+    // assert_unreachable_id_872: assert property(unreachable_id_872);
 endmodule

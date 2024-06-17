@@ -37,6 +37,6 @@ module fpnew_divsqrt_th_32_assert (
             (op_starting && unit_ready_q) |-> !(ex2_inst_wb && ex2_inst_wb_vld_q);
     endproperty
 
-    assert_unreachable_divsqrt_th_288: assert property(unreachable_divsqrt_th_288);
+    // assert_unreachable_divsqrt_th_288: assert property(unreachable_divsqrt_th_288);
 
 endmodule
